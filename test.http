@@ -1,0 +1,38 @@
+#### Metodo GET /mostrando todos los resultados
+GET http://localhost:3000/info
+
+
+
+
+
+
+###METODO POST / crear un nuevo dato
+POST http://localhost:3000/info
+Content-Type: application/json
+
+{   
+    "coordenadax": 1, 
+    "coordenaday": 2,
+    "tamano": 43,
+    "estado": "sin explorar"
+}
+
+
+
+###METODO PUT / actualizar dato
+PUT  http://localhost:3000/info/1
+Content-Type: application/json
+
+{   
+    "coordenadax": 34, 
+    "coordenaday": 34,
+    "tamano": 43,
+    "estado": "sin estado"
+
+}
+
+
+
+###METODO DELETE /eliminar un dato
+
+DELETE http://localhost:3000/info/7
